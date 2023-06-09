@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 import { createContext, ReactNode, useContext, useEffect, useReducer } from "react";
 import { allBoards } from "../data";
 import { auth } from "../firebase";
-import { generateId } from "../Functions/Functions";
+import { generateId, logout } from "../Functions/Functions";
 import { appReducer } from "../Reducer/appReducer";
 import { AppContextType } from "../Types/types";
 
@@ -90,6 +90,7 @@ export function AppProvider({children}: {children: ReactNode}){
         })
         return unsubscribe
     },[])
+
     return (
         <AppContext.Provider value={{...mainState, dispatch}}>
             {children}

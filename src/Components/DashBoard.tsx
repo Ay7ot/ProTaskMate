@@ -6,6 +6,7 @@ import { db } from '../firebase'
 import Loader from './Loader'
 import { useLocation } from 'react-router-dom'
 import BoardPage from './BoardPage'
+import { logout } from '../Functions/Functions'
 
 export default function DashBoard() {
     const { currentUser, dispatch , username, Boards } = useAuth()
@@ -72,6 +73,7 @@ export default function DashBoard() {
             })
         }
     }, [Boards])
+
 
     
     if(!currentUser){
