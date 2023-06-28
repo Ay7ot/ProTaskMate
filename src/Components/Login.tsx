@@ -82,7 +82,7 @@ export default function Login() {
                             }
                         })
                     }}
-                    className='p-2 border-[2px] w-[300px] border-[#808080] focus:border-[#635fc7] outline-none rounded-md'
+                    className='p-4 border-[2px] w-[350px] border-none focus:border-[#635fc7] outline-none rounded-md'
                     placeholder='Email'
                 />
                 <input 
@@ -97,12 +97,12 @@ export default function Login() {
                             }
                         })
                     }}
-                    className='p-2 border-[2px] w-[300px] focus:border-[#635fc7] outline-none border-[#8a8383] rounded-md'
+                    className='p-4 border-[2px] w-[350px] focus:border-[#635fc7] outline-none border-none rounded-md'
                     placeholder='Password'
                 />
                 <Link to='/forgotPassword' className='text-[#635fc7]'>Forgotten Password?</Link>
-                <button disabled={loading} className='text-white w-[300px] p-2 bg-[#635fc7] rounded-lg text-[1.3rem] font-bold tracking-wide'>Login</button>
-                <button type='button' onClick={useGuest} className='text-white w-[300px] p-2 bg-[#635fc7] rounded-lg text-[1.2rem] font-bold tracking-wide flex items-center justify-center gap-3'><i><FaUser /></i> Browse as Guest</button>
+                <button disabled={loading} className='text-white w-[350px] p-4 bg-[#635fc7] rounded-lg text-[1.3rem] font-semibold tracking-wide'>Login</button>
+                <button type='button' onClick={useGuest} className='text-white w-[350px] p-4 bg-[#635fc7] rounded-lg text-[1.2rem] font-semibold tracking-wide flex items-center justify-center gap-3'><i><FaUser /></i> Browse as Guest</button>
             </form>
             <GoogleSignIn />
             <p className={`mt-6 ${isLightToggled ?'text-black':'text-white'}`}>Need an account? <Link to='/signup' className='text-[#635fc7] '>Sign Up</Link></p>

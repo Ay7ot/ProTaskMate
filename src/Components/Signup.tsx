@@ -70,7 +70,7 @@ export default function Signup() {
                             }
                         })
                     }}
-                    className='p-2 border-[2px] w-[300px] border-[#808080] focus:border-[#635fc7] outline-none rounded-md'
+                    className='p-4 border-[2px] w-[350px]  border-none focus:border-[#635fc7] outline-none rounded-md'
                     placeholder='Email'
                 />
                 <input 
@@ -85,7 +85,7 @@ export default function Signup() {
                             }
                         })
                     }}
-                    className='p-2 border-[2px] w-[300px] focus:border-[#635fc7] outline-none border-[#808080] rounded-md'
+                    className='p-4 border-[2px] w-[350px] focus:border-[#635fc7] outline-none  border-none rounded-md'
                     placeholder='Username'
                 />
                 <input 
@@ -100,11 +100,11 @@ export default function Signup() {
                             }
                         })
                     }}
-                    className='p-2 border-[2px] w-[300px] focus:border-[#635fc7] outline-none border-[#808080] rounded-md'
+                    className='p-4 border-[2px] w-[350px] focus:border-[#635fc7] outline-none  border-none rounded-md'
                     placeholder='Password'
                 />
                 
-                <button disabled={loading} type='submit' className='text-white w-[300px] p-4 bg-[#635fc7] rounded-lg text-[1.3rem] font-bold tracking-wide mt-6'>Sign Up</button>
+                <button disabled={loading} type='submit' className='text-white w-[350px] p-4 bg-[#635fc7] rounded-lg text-[1.3rem] font-semibold tracking-wide mt-6'>Sign Up</button>
             </form>
             <GoogleSignIn />
             <p className={`mt-6 ${isLightToggled ?'text-black':'text-white'}`}>Already have an account? <Link to='/login' className='text-[#635fc7] '>Log In</Link></p>
