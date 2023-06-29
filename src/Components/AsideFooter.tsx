@@ -21,17 +21,7 @@ export default function AsideFooter() {
     function logoutUser(){
         logout()
         dispatch({
-            type: 'setNoModals'
-        })
-        dispatch({
-            type: 'setNoUser'
-        })
-        dispatch({
-            type: 'setNoParameter'
-        })
-
-        dispatch({
-            type: 'setNoBoards'
+            type: 'setLogout'
         })
     }
 

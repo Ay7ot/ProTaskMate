@@ -65,7 +65,7 @@ export default function DashBoard() {
     },[])
 
     useEffect(()=>{
-        if(username!=='' && Boards && Boards.length>0){
+        if(username !=='' && Boards && Boards.length>0){
             const reference = ref(db, 'users/'+username)
 
             update(reference, {

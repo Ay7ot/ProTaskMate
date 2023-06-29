@@ -232,6 +232,58 @@ export function appReducer(state: AppContextType, action: AppActionType){
                 ...state,
                 sideBarShown: false
             }
+        // Possible fix for user details overwritten after logging in and out of guest.
+        case 'setLogout':
+            return {
+                ...state,
+                currentUser:  null,
+                email: '',
+                username: '',
+                password: '',
+                errorMessage: '',
+                dispatch: ()=>{},
+                Boards: null,
+                currentBoard: null,
+                modals: {
+                    boardsModal: false,
+                    editBoardmodal: false,
+                    deleteBoardModal: false,
+                    addColumnModal: false,
+                    editModal: false,
+                    addTaskModal: false,
+                    showTaskModal: false,
+                    deleteTaskModal: false,
+                    editTaskModal: false,
+                    createBoardModal: false
+                },
+                currentBoardCopy: null,
+                newTask: {
+                    id: nanoid(),
+                    description: '',
+                    title: '',
+                    status: '',
+                    statusId: '',
+                    subtasks: [{
+                       title: '',
+                       isCompleted: false ,
+                       id: nanoid()
+                    }]
+                },
+                currentTask: {
+                    id: '',
+                    description: '',
+                    title: '',
+                    status: '',
+                    statusId: '',
+                    subtasks: [{
+                       title: '',
+                       isCompleted: false ,
+                       id: ''
+                    }]
+                },
+                sideBarShown: true,
+                newBoard: null
+            }
         default:
             return state
     }

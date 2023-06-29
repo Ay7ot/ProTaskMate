@@ -62,7 +62,6 @@ export default function BoardPage() {
                }
             })
             setLoading(false)
-
         }
     },[username, Boards])
 
