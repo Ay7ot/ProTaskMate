@@ -27,7 +27,7 @@ To use this app, you can either download the source code and run it locally, or 
 You can access the live demo version of the app at https://protaskmate.web.app.
 
 ## Usage
-To use the app, simply create a new board, add tasks to it, create subtasks and move them between columns as they progress. 
+To use the app, simply create a new board, add tasks to it, create subtasks and move them between columns as they progress
 
 ## Contributing
 We welcome contributions from the community. If you find a bug or have a feature request, please open an issue on GitHub. If you want to contribute code, please fork the repository and submit a pull request.
